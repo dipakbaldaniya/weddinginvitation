@@ -1,0 +1,30 @@
+/*
+ * "Click to open" envelope: while it's closed (html.envelope-closed, set in
+ * assets/js/core/envelope-lock.js), nothing but the envelope is shown and the
+ * page can't scroll. #rec2442650973 is the envelope section, #rec2442650983
+ * the music section (see assets/js/config/sections.js).
+ */
+
+html.envelope-closed {
+  overflow: hidden; /* no scrollbar, no scrolling */
+}
+
+/* Pin the envelope over the whole window (envelope-cover.js scales it to cover). */
+html.envelope-closed #rec2442650973 .t396__artboard,
+html.envelope-opening #rec2442650973 .t396__artboard {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+/* Keep every other section hidden until the envelope is opened. */
+html.envelope-closed #allrecords > .t-rec:not(#rec2442650973):not(#rec2442650983) {
+  visibility: hidden;
+}
+
+/* The scaled envelope and the flaps sliding out extend past the window edges. */
+html.envelope-closed body,
+html.envelope-opening body {
+  overflow-x: hidden;
+}

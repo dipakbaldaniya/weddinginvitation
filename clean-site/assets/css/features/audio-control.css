@@ -1,0 +1,39 @@
+/* Floating play/pause button for the background music (see assets/js/features/background-music.js). */
+
+.audio-control {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 2147483647;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  background: #64a0bd;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  /* Hidden until the guest opens the envelope. */
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.3s ease-in-out;
+}
+
+.audio-control.is-visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+.audio-control:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 3px;
+}
+
+.audio-control__icon {
+  width: 30px;
+  height: 30px;
+  fill: #fff;
+}

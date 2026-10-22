@@ -1,0 +1,141 @@
+/* Section: 12-rsvp-popup (Tilda record #rec2442651153) */
+@media screen and (max-width: 560px) {
+  #rec2442651153 .t-popup__close-icon g {
+    fill: #ffffff !important;
+  }
+}
+#rec2442651153 .t-btnflex.t-btnflex_type_submit {
+  color: #ffffff;
+  background-color: #9bc9e1;
+  --border-width: 0px;
+  border-style: none !important;
+  border-radius: 20px;
+  box-shadow: none !important;
+  font-family: Georgia;
+  font-weight: 400;
+  transition-duration: 0.2s;
+  transition-property: background-color, color, border-color, box-shadow, opacity, transform, gap;
+  transition-timing-function: ease-in-out;
+}
+#rec2442651153 .t-btnflex.t-btnflex_type_submit {
+  position: relative;
+}
+#rec2442651153 .t-btnflex.t-btnflex_type_submit .t-btn_wrap-effects {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  isolation: isolate;
+  container-type: inline-size;
+  container-name: button-effects;
+}
+#rec2442651153 .t-btnflex.t-btnflex_type_submit .t-btn_inner-effects {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  transform: translateX(-85px);
+  animation: 3s linear infinite flash;
+}
+@container button-effects (min-width:230px) {
+  #rec2442651153 .t-btnflex.t-btnflex_type_submit .t-btn_inner-effects {
+    animation-name: flash-md;
+  }
+}
+@container button-effects (min-width:750px) {
+  #rec2442651153 .t-btnflex.t-btnflex_type_submit .t-btn_inner-effects {
+    animation-name: flash-lg;
+  }
+}
+#rec2442651153 .t-btnflex.t-btnflex_type_submit .t-btn_effects {
+  position: absolute;
+  top: 0;
+  left: 30px;
+  display: block;
+  width: 45px;
+  height: 100%;
+  background-image: linear-gradient(90deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.4));
+  transform: skewX(-45deg);
+}
+@keyframes flash {
+  20% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+@keyframes flash-md {
+  30% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+@keyframes flash-lg {
+  40% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+#rec2442651153 input::-webkit-input-placeholder {
+  color: #4a4a4a;
+  opacity: 0.5;
+}
+#rec2442651153 input::-moz-placeholder {
+  color: #4a4a4a;
+  opacity: 0.5;
+}
+#rec2442651153 input:-moz-placeholder {
+  color: #4a4a4a;
+  opacity: 0.5;
+}
+#rec2442651153 input:-ms-input-placeholder {
+  color: #4a4a4a;
+  opacity: 0.5;
+}
+#rec2442651153 textarea::-webkit-input-placeholder {
+  color: #4a4a4a;
+  opacity: 0.5;
+}
+#rec2442651153 textarea::-moz-placeholder {
+  color: #4a4a4a;
+  opacity: 0.5;
+}
+#rec2442651153 textarea:-moz-placeholder {
+  color: #4a4a4a;
+  opacity: 0.5;
+}
+#rec2442651153 textarea:-ms-input-placeholder {
+  color: #4a4a4a;
+  opacity: 0.5;
+}
+#rec2442651153 .t702__title {
+  font-size: 22px;
+  font-family: 'Georgia';
+  font-weight: 400;
+  opacity: 1;
+}
+@media screen and (max-width: 480px), (orientation: landscape) and (max-height: 480px) {
+  #rec2442651153 .t702__title {
+    font-size: 22px;
+  }
+}
+#rec2442651153 .t702__descr {
+  font-family: 'Georgia';
+  font-weight: 400;
+  opacity: 1;
+}
+@media screen and (max-width: 480px), (orientation: landscape) and (max-height: 480px) {
+  #rec2442651153 .t702__descr {
+    font-size: 18px;
+  }
+}
